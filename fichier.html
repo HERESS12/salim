@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>salime</title>
+</head>
+<body>
+    <header>
+        <h1>
+            OLEPE SHOP
+        </h1>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#Produits">Produits</a></li>
+                <li><a href="#panier" id="cart-link"><i class="fa-solid fa-cart-shopping"></i>
+                    (<span id="cart-count">0</span>   )
+
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <section class="hero-section" id="home">
+                <h1>BIENVENUE SUR NOS BOUTIQUES</h1>
+                <p>Trouver des produits de qualites a des prix imbatables</p>
+            </section>
+            <section class="produits-section" id="produits" >
+                  <h2>NOS PRODUITS</h2>
+                <div class="produits-container" id="produits-container"> 
+                 <!--les cartes de produits-->
+                  <div class="produits-card">
+                     <img src="./images/Blender Multifonctions 1.5L SMART.STPE-1000.jpeg">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier </button>
+                        
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/Blender Multifonctions 1.5L SMART.STPE-1020B.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/Blender Multifonctions 1.5L SMART.STPE-1020G.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/Blender Multifonctions 1.5L SMART.STPE-1110.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/congelateur 102L STCC-102.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/congelateur 105L STCC-177H.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/congelateur 141L STCC-255H.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/congelateur 142L STCC-215M.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/ClimatiseurSTS-18 2CV.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/ClimatiseurSTS-18 2CV.jpeg2.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/ClimatiseurSTS-24 power 3CV.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                    <div class="produits-card">
+                     <img src="./images/ClimatiseurSTS-18 2CV.jpeg2.jpeg" alt="${produit.name}" class="produit.image">
+                       <div class="produit-info">
+                         <h3>${produit.name}</h3>
+                         <p>Prix:$Fcfa{produit.prix.tof ixed(2)}</p>
+                         <a href="./pages/${produit.detailsur1}" class="view-details"><i class="fa-solid fa-eye"></i></a>
+                          <button class="add-to-cart already-in-cart" id="bnt-$(produit.id)"
+                           onclick="window.location='cart.html'">Deja au panier
+                          </button>
+                        </div> 
+                    </div>
+                   
+                </div>
+            </section>
+        </main>
+    <footer>
+        <p>DEV OLEPE 2025</p>
+    </footer>
+    
+   <script src="./js/main.js"></script>
+</body>
+</html>
